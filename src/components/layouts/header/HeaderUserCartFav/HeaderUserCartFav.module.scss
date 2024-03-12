@@ -1,0 +1,26 @@
+@import 'src/assets/styles/base/_mixin';
+@import 'src/assets/styles/base/_fadeIn';
+
+.root {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+
+	@include fade(right);
+
+	a,
+	button {
+		@include adaptiv-font(30, 24, 34);
+		color: #9b9b9b;
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		background-color: transparent;
+		cursor: pointer;
+		span {
+			color: #5c5c5c;
+			@include adaptiv-font(14, 12, 18);
+		}
+	}
+}

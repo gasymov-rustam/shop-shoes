@@ -1,0 +1,13 @@
+@import 'src/assets/styles/base/_fadeIn';
+
+.root {
+	@include fade(right);
+
+	.ui_button {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		background-color: #a09f9f;
+		color: #fff;
+	}
+}
